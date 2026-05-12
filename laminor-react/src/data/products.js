@@ -1,0 +1,61 @@
+export const PRODUCTS = [
+  { 
+    id: 1,
+    name: 'Grand Oak Premium', 
+    cat: 'Classic Oak · 12mm', 
+    dims: '1220 × 400 × 12 mm', 
+    specs: 'AC5/33 · HDF 860kg/m³ · Wax Protected',
+    price: 159000, 
+    oldPrice: 189000,
+    badges: ['hot', 'eco'], 
+    chips: ['Waterproof', 'Green Core', 'Sinxron'],
+    stock: 'in', 
+    desc: 'Premium sifatli eman laminati. Super Wax texnologiyasi bilan suvdan to\'liq himoyalangan. 25 yil kafolat.',
+    cells: [['#7a5c3d','#9a7a56'],['#6b5038','#8a6850'],['#8c6848','#a8845e'],['#5e4028','#7c5a3c'],['#a08060','#c0a080'],['#745435','#906848'],['#624830','#80604a'],['#8a6a4a','#a88060'],['#543828','#705040'],['#9c7a58','#b89272'],['#6a4e35','#886250'],['#7e5e42','#9a7858']],
+    colors: [['#7a5c3d','#a08060'],['#5a4030','#7a6050'],['#9a7a5a','#baa07a']]
+  },
+  { 
+    id: 2,
+    name: 'Urban Grey Modern', 
+    cat: 'Grey Beton · 10mm', 
+    dims: '1220 × 240 × 10 mm', 
+    specs: 'AC5/33 · HDF 860kg/m³ · Antistatic',
+    price: 145000, 
+    badges: ['new'], 
+    chips: ['Waterproof', 'Modern Style', 'U-Groove'],
+    stock: 'in', 
+    desc: 'Zamonaviy loft uslubidagi kulrang laminat. Ofis va xonadonlar uchun ideal tanlov.',
+    cells: [['#8a8888','#a8a6a4'],['#7c7a78','#9a9896'],['#969492','#b4b2b0'],['#706e6c','#8e8c8a'],['#848280','#a2a09e'],['#6e6c6a','#8c8a88'],['#9a9896','#b8b6b4'],['#787674','#969492'],['#8c8a88','#aaa8a6'],['#747270','#929090'],['#a0a09e','#bebebc'],['#7a7876','#989694']],
+    colors: [['#8a8888','#b0aeac'],['#606060','#808080'],['#c0bebe','#dcdcdc']]
+  },
+  { 
+    id: 3,
+    name: 'Natural Ash Elite', 
+    cat: 'Natural Ash · 0.8mm', 
+    dims: '1220 × 240 × 0.8 mm', 
+    specs: 'SPC · 100% Waterproof · Eco Friendly',
+    price: 114750, 
+    oldPrice: 135000,
+    badges: ['sale'], 
+    chips: ['SPC', 'Green Core', 'U-Groove'],
+    stock: 'lo', 
+    stockTxt: 'Kam qoldi — 8 ta',
+    desc: 'Tabiiy kul daraxti teksturasi. SPC texnologiyasi bilan 100% suv o\'tkazmaydi.',
+    cells: [['#d4c8b0','#e8dcc8'],['#c8bca4','#dcd0bc'],['#e0d4bc','#f0e4d0'],['#bca898','#d0bcac'],['#ccc0a8','#e0d4c0'],['#b8ac9c','#ccc0b0'],['#d8ccb4','#ece0cc'],['#c0b4a0','#d4c8b4'],['#d0c4ac','#e4d8c4'],['#c4b8a4','#d8ccb8'],['#dcd0b8','#f0e4d0'],['#c8bca8','#dcd0bc']],
+    colors: [['#d4c8b0','#e8dcc8'],['#e8e0d0','#f8f0e4']]
+  },
+  { 
+    id: 4,
+    name: 'Dark Wenge Classic', 
+    cat: 'Dark Wenge · 12mm', 
+    dims: '1220 × 400 × 12 mm', 
+    specs: 'AC5/33 · Deep Texture',
+    price: 168000, 
+    badges: ['eco'], 
+    chips: ['Waterproof', 'Green Core', 'Elite'],
+    stock: 'in', 
+    desc: 'Klassik to\'q venge rangi. Aristokratik ko\'rinish va yuqori chidamlilik.',
+    cells: [['#2c1810','#4a2c1a'],['#3a2018','#582e20'],['#261410','#402018'],['#382416','#563022'],['#2e1c12','#4c2a1a'],['#401c12','#5e2c1e'],['#301a10','#4e2818'],['#3c2016','#5a2e20'],['#281610','#461e16'],['#3e2218','#5c3022'],['#321e12','#50281c'],['#2a1812','#482018']],
+    colors: [['#2c1810','#4a2c1a'],['#1a1008','#302010']]
+  }
+];

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #F0EFEB;
+  --text-color: #0F0F0D;
+  --card-bg: #ffffff;
+  --border-color: #E2DFD8;
+}
+
+html.dark {
+  --bg-color: #0F0F0D;
+  --text-color: #ffffff;
+  --card-bg: #121212;
+  --border-color: rgba(255,255,255,0.07);
+}
+
+@layer base {
+  html, body, #root { 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    @apply transition-colors duration-300 font-jakarta min-h-screen;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-blue { @apply px-8 py-4 bg-[#2563FF] text-white border-none rounded-xl text-[13px] font-bold cursor-pointer transition-all hover:bg-[#1A4FE8] active:scale-95 shadow-lg shadow-[#2563FF]/20; }
+  .btn-ghost-w { @apply px-8 py-4 bg-transparent text-white/60 border border-white/20 rounded-xl text-[13px] font-bold cursor-pointer transition-all hover:bg-white/5 hover:text-white; }
+  
+  /* Sections */
+  .section-white { background-color: var(--card-bg); @apply border-y border-[var(--border-color)] transition-colors duration-300; }
+  .section-grey { background-color: var(--bg-color); @apply transition-colors duration-300; }
+
+  /* Cards */
+  .why-card { background-color: var(--card-bg); border: 1px solid var(--border-color); @apply p-8 rounded-[24px] transition-all hover:border-[#2563FF]/30; }
+  
+  /* Navbar Link */
+  .nav-link { @apply h-16 px-5 flex items-center text-[13px] font-bold text-white/50 cursor-pointer transition-all hover:text-white relative; }
+  .nav-link.active { @apply text-white bg-white/5; }
+  .nav-link.active::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-[2px] bg-[#2563FF]; }
+
+  /* Cart Panel */
+  .cart-panel { 
+    background-color: var(--card-bg);
+    border-left: 1px solid var(--border-color);
+    @apply fixed top-0 right-0 h-full w-full sm:w-[400px] z-[1001] shadow-[-10px_0_40px_rgba(0,0,0,0.1)] flex flex-col transition-transform duration-300 translate-x-full; 
+  }
+  .cart-panel.open { @apply translate-x-0; }
+  .cart-overlay { 
+    @apply fixed inset-0 bg-black/40 dark:bg-black/70 z-[1000] opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm; 
+  }
+  .cart-overlay.open { @apply opacity-100 pointer-events-auto; }
+
+  .sh-tag { @apply px-[14px] py-[6px] rounded-full border border-[#2563FF]/15 flex items-center gap-2 w-fit mx-auto mb-5; background-color: rgba(37,99,255,0.08); }
+  .sh-tag-dot { @apply w-[6px] h-[6px] rounded-full bg-[#2563FF]; }
+  .sh-tag-txt { @apply text-[11px] font-bold text-[#2563FF] tracking-[0.15em] uppercase; }
+}

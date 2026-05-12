@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class', // Klass orqali boshqarishni yoqamiz
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          DEFAULT: '#2563FF',
+          dark: '#1A4FE8',
+        }
+      },
+      fontFamily: {
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-out',
+        slideIn: 'slideIn 0.3s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideIn: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}
