@@ -1,5 +1,8 @@
 {
+  "private": true,
   "scripts": {
-    "dev": "cd laminor-react && npm run dev"
+    "dev": "cd laminor-react && npm install && npm run dev",
+    "build": "cd laminor-react && npm install && npm run build",
+    "preview": "cd laminor-react && npm install && npm run preview"
   }
 }
